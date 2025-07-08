@@ -31,3 +31,4 @@ function merge(left, right) {
 }
 
 console.log(sortArray(arr)); 
+/// added a edge case 
