@@ -10,9 +10,28 @@
 //     container.appendChild(line);
 // }
 
-let arr=[4,1,1,4,2]
-let xor=0;
-for(let i=0;i<arr.length;i++){
-	xor=xor^arr[i];
+// let arr=[4,1,1,4,2]
+// let xor=0;
+// for(let i=0;i<arr.length;i++){
+// 	xor=xor^arr[i];
+// }
+// console.log(xor) ;
+
+let arr=[1,3,5,6,6,7]
+let target=7;
+let left = 0;
+let right = arr.length - 1;
+while(left<=right){
+	let mid=Math.floor((left+right)/2)
+	if (target===arr[mid]){
+		console.log(mid)
+		break;
+	}
+	else if(target<arr[mid]){
+		right=mid-1
+	}
+	else{
+		left=mid+1
+	}
+
 }
-console.log(xor) ;
