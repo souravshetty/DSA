@@ -1,0 +1,1 @@
+To run the program move to that folder from terminal and then run "node <filename>"
